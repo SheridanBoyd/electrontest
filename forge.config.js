@@ -30,4 +30,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'SheridanBoyd',
+          name: 'electrontest'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };
